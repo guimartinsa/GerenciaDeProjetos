@@ -45,7 +45,7 @@ public class Main {
                         LocalDateTime.of(2025, 12, 30, 0, 0),
                         LocalDateTime.of(2026, 1, 1, 6, 0));
 
-            Cupom festa10 = new Cupom("festa10", 20,
+            Cupom festa20 = new Cupom("festa20", 20,
                     LocalDateTime.of(2025, 12, 30, 0, 0),
                     LocalDateTime.of(2026, 1, 1, 6, 0));
 
@@ -55,7 +55,7 @@ public class Main {
 
 
                 aplicador.aplicar(pedido, festa15, agora);
-                aplicador.aplicar(pedido, festa10, agora);
+                aplicador.aplicar(pedido, festa20, agora);
 
             //System.out.println("Valor final: R$ " + pedido.calcularValorFinal());
 

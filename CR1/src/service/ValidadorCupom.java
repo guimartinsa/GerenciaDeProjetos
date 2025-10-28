@@ -17,9 +17,11 @@ public class ValidadorCupom {
         }
 
         Cupom cupomAtual = pedido.getCupomAplicado();
-        if (cupomAtual != null && cupom.getPercentualDesconto() >= cupomAtual.getPercentualDesconto()) {
+
+        /*if (cupomAtual != null && cupom.getPercentualDesconto() >= cupomAtual.getPercentualDesconto()) {
             throw new Exception ("Novo Cupom aplicado com sucesso!");
-        }
+        }*/
+
         if (cupomAtual != null && cupom.getPercentualDesconto() <= cupomAtual.getPercentualDesconto()) {
             throw new Exception("Cupom possui desconto menor ou igual ao já aplicado.");
         }
